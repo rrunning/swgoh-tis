@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, enableProdMode } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'swgoh-tis';
+  title = 'this super dope app';
+  
+
+  constructor(private http: HttpClient) {
+  }
+  ngOnInit() {
+
+    
+    
+  }
+
+
 }
